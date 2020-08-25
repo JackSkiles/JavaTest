@@ -20,14 +20,15 @@ public class BankAccount{
    
     /** Deposits money into the bank account. @param amount the amount to deposit */
     public void deposit(double amount, String user){
-    	if (this.user == user) {
+    	if (this.user.equals(user)) {
     		balance[0] = balance[0] + amount;	
     	}
         
     }
     /** Withdraws money from the bank account. @param amount the amount to withdraw */
     public void withdraw(double amount, String user){
-    	if (this.user == user) {
+    	if (this.user.equals(user)) {
+    		System.out.println("Hello " + user);
     		balance[0] = balance[0] - amount;	
     	}
     }
